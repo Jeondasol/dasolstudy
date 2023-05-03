@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css-->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <style>
+    .head {border-bottom: 0.5px solid rgb(224, 224, 224); height: 72px; display: flex; justify-content: center; align-items: center;}
+    .logo {width: 50%; margin-left: 330px;}
+    .menu {width: 50%; margin-left: 120px; font-size: 12px;}
+    .main {height: 850px; display: flex; justify-content: center; align-items: center;}
+    .main_1 {display: flex; flex-wrap: wrap; justify-content: space-evenly; height: 400px; margin-top: 100px;}
+    .main_1 div {width: 300; height: 300px;}
+    .main_2 {display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-bottom: 100px;}
+    .main_2 div {width: 300; height: 300px;}
+    .main_0 {width: 1300px; height: 800px;}
+    .space1 {position: relative;}
+    .mplanit1 {position: absolute; width: 300px; height: 300px; top: 0;}
+    .space2 {position: relative;}
+    .mplanit2 {position: absolute; width: 300px; height: 300px; top: 0;}
+    .space3 {position: relative;}
+    .mplanit3 {position: absolute; width: 300px; height: 300px; top: 0;}
+    .space4 {position: relative;}
+    .mplanit4 {position: absolute; width: 300px; height: 300px; top: 0;}
+    .space5 {position: relative;}
+    .mplanit5 {position: absolute; width: 300px; height: 300px; top: 0;}
+    .space6 {position: relative;}
+    .mplanit6 {position: absolute; width: 300px; height: 300px; top: 0;}
+    .m1 {display: flex; justify-content: center; align-items: center; color: white;}
+    .m2 {display: flex; justify-content: center; align-items: center; color: white;}
+    .m3 {display: flex; justify-content: center; align-items: center; color: white;}
+    .m4 {display: flex; justify-content: center; align-items: center; color: white;}
+    .m5 {display: flex; justify-content: center; align-items: center; color: white;}
+    .m6 {display: flex; justify-content: center; align-items: center; color: white;}
+
+  </style>
+  <title>mouseenter_study</title>
+</head>
+<body>
+  <div class="window">
+    <div class="head">
+      <div class="logo">
+        <img src="./images/mplanitLogo.PNG" alt="mplanitlogo">
+      </div>
+      <div class="menu">
+        ABOUT &nbsp&nbsp SERVICE &nbsp&nbsp TEAM &nbsp&nbsp PATRNERS &nbsp&nbsp CONTACT
+
+      </div>
+    </div>
+    <div class="main">
+
+      <div class="main_0">
+
+        <div class="main_1">
+          <div class="space1">
+            <img src="./images/mplanit1.PNG" >
+            <div class="mplanit1"></div>
+          </div>
+          <div class="space2">
+            <img src="./images/mplanit2.PNG">
+            <div class="mplanit2"></div>
+          </div>
+          <div class="space3">
+            <img src="./images/mplanit3.PNG">
+            <div class="mplanit3"></div>
+          </div>
+        </div>
+
+        <div class="main_2">
+          <div class="space4">
+            <img src="./images/mplanit4.PNG">
+            <div class="mplanit4"></div>
+          </div>
+          <div class="space5">
+            <img src="./images/mplanit5.PNG">
+            <div class="mplanit5"></div>
+          </div>
+          <div class="space6">
+            <img src="./images/mplanit6.PNG"> 
+            <div class="mplanit6"></div>
+          </div>
+        </div>  
+
+      </div>      
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(function(){
+
+      $('.space1').mouseenter(function(){
+        $('.mplanit1').css('background','rgba(0, 0, 0, 0.623)').fadeIn(200);
+        $('.mplanit1').addClass('m1');
+        $('.mplanit1').text('데이터를 기반으로 검색광고');
+      });
+
+      $('.space1').mouseleave(function(){
+        $('.mplanit1').fadeOut(200);
+        });
+
+      $('.space2').mouseenter(function(){
+        $('.mplanit2').css('background','rgba(0, 0, 0, 0.623)').fadeIn(200);
+        $('.mplanit2').addClass('m2');
+        $('.mplanit2').text('타케팅을 기반으로 디스플레이 캠페인 집행');
+        
+        });
+
+      $('.space2').mouseleave(function(){
+        $('.mplanit2').fadeOut(200);
+        });
+
+      $('.space3').mouseenter(function(){
+        $('.mplanit3').css('background','rgba(0, 0, 0, 0.623)').fadeIn(200);
+        $('.mplanit3').addClass('m3');
+        $('.mplanit3').text('SNS 캠페인 최적화 전략');
+      });   
+
+      $('.space3').mouseleave(function(){
+        $('.mplanit3').fadeOut(200);
+        });
+
+      $('.space4').mouseenter(function(){
+        $('.mplanit4').css('background','rgba(0, 0, 0, 0.623)').fadeIn(200);
+        $('.mplanit4').addClass('m4');
+        $('.mplanit4').text('Creative Quality');
+        });
+
+      $('.space4').mouseleave(function(){
+        $('.mplanit4').fadeOut(200);
+        });
+
+        $('.space5').mouseenter(function(){
+        $('.mplanit5').css('background','rgba(0, 0, 0, 0.623)').fadeIn(200);
+        $('.mplanit5').addClass('m5');
+        $('.mplanit5').text('Contents Strategy');
+        });
+
+      $('.space5').mouseleave(function(){
+        $('.mplanit5').fadeOut(200);
+      });
+
+        $('.space6').mouseenter(function(){
+        $('.mplanit6').css('background','rgba(0, 0, 0, 0.623)').fadeIn(200);
+        $('.mplanit6').addClass('m6');
+        $('.mplanit6').text('Build-up Strategy');
+        });
+
+      $('.space6').mouseleave(function(){
+        $('.mplanit6').fadeOut(200);
+      });
+
+
+      })
+  </script>
+</body>
+</html>
