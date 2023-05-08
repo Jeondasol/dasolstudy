@@ -1,0 +1,16 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+.popupStay {
+  margin-top: 50px;
+  display: none;
+}
+
+.popup_close {
+  background: none;
+  border: 0;
+}
