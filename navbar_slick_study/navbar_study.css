@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.slick-top {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+nav ul {
+  width: 100%;
+  background-color: rgba(44, 42, 39, 0.983);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*네비게이션 바 슬라이드*/
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: 0;
+  overflow: hidden; /*content는 안보이다가*/
+  
+}
+/*마우스호버하면 content 나오도록*/
+.dropdown:hover .dropdown-content {
+  height: 190px;
+  transition-duration: 0.8s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
