@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+  <style>
+    .menu {display: flex; cursor: pointer;}
+    .menu div {border: 0.5px solid;}
+    .active {background-color: rgb(252, 43, 165);}
+      </style>
+
+  <title>Document</title>
+</head>
+<body>
+  <span class = "menu">
+    <div>tab1</div>
+    <div>tab2</div>
+    <div>tab3</div>
+    <div>tab4</div>
+  </span>
+
+  <script type="text/javascript">
+    $(function(){
+      $(".menu > div").click(function () {
+        $(".menu > div").removeClass("active");
+        //this는 함수를 실행하게 만든 그 클릭한 요소다!
+        $(this).addClass("active");//그 요소에게 효과주고
+      });
+    })
+  </script>
+  
+</body>
+</html>
